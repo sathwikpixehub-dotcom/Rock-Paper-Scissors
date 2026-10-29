@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.choice {
+    text-align: center;
+}
+
+.choice-btn {
+    width: 110px;
+    height: 110px;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background: white;
+    font-size: 42px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.choice-btn:hover {
+    transform: translateY(-6px) scale(1.05);
+    background: #dbeafe;
+    border-color: #60a5fa;
+}
+
+.choice-btn:active {
+    transform: scale(0.95);
+}
+
+.choice p {
+    margin-top: 10px;
+    color: #e2e8f0;
+    font-size: 14px;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    line-height: 1.8;
+}
+
+#resultText {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #facc15;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #f97316;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.reset-btn:hover {
+    background: #ea580c;
+}
+
+@media (max-width: 400px) {
+    .game-container {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .choice-btn {
+        width: 85px;
+        height: 85px;
+        font-size: 34px;
+    }
+}
